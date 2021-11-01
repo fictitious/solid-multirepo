@@ -4,6 +4,8 @@
     "version": "0.1.0",
     "desciption": "all solid.js and related source code as submodules in one monorepo",
     "devDependencies": {
+        "npm-run-all": "^4.1.5",
+        "rollup": "^2.56.1",
         "yarn": "^1.22.15"
     },
     "resolutions": {
@@ -18,7 +20,12 @@
         "solid-refresh": "workspace:*"
     },
     "scripts": {
-        "bootstrap": "yarn install --mode=skip-build"
+        "bootstrap": "yarn install --mode=skip-build",
+        "build-babel-plugin-jsx-dom-expressions": "yarn workspace babel-plugin-jsx-dom-expressions run build",
+        "build-solid-refresh": "yarn workspace solid-refresh run build",
+        "build-vite-plugin-solid": "yarn workspace vite-plugin-solid run build",
+        "build-solid": "cd submodules/solid/packages/solid && npm run build",
+        "build-dev-dependencies": "npm-run-all -c -p build-babel-plugin-jsx-dom-expressions build-solid-refresh build-vite-plugin-solid build-solid"
     },
     "packageManager": "yarn@3.0.2",
     "workspaces": [

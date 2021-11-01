@@ -32,3 +32,17 @@ node .yarn/releases/yarn-3.0.2.cjs install --mode=skip-build
 ```sh
 yarn run build-dev-dependencies
 ```
+
+## Run solid site in dev mode, using solid-js source code
+
+```sh
+cd submodules/solid-site
+npm run dev
+```
+
+HMR should work for solid sources - try changing, for example, `submodules/solid/packages/solid/src/reactive/signal.ts` file,
+and add some console logging to the [`writeSignal` function](https://github.com/fictitious/solid/blob/solid-sources-monorepo/packages/solid/src/reactive/signal.ts#L985):
+
+```javascript
+    console.log(`writeSignal value=${JSON.stringify(value)}`, node);
+```

@@ -15,7 +15,7 @@
 	url = https://github.com/ryansolid/dom-expressions.git
 [submodule "vite-plugin-solid"]
 	path = submodules/vite-plugin-solid
-	url = https://github.com/fictitious/vite-plugin-solid
+	url = https://github.com/fictitious/vite-plugin-solid.git
 [submodule "solid-refresh"]
 	path = submodules/solid-refresh
-	url = https://github.com/solidjs/solid-refresh
+	url = https://github.com/solidjs/solid-refresh.git

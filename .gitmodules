@@ -1,0 +1,21 @@
+[submodule "solid"]
+	path = submodules/solid
+	url = https://github.com/fictitious/solid.git
+[submodule "solid-docs"]
+	path = submodules/solid-docs
+	url = https://github.com/solidjs/solid-docs.git
+[submodule "solid-site"]
+	path = submodules/solid-site
+	url = https://github.com/fictitious/solid-site.git
+[submodule "solid-app-router"]
+	path = submodules/solid-app-router
+	url = https://github.com/fictitious/solid-app-router.git
+[submodule "dom-expressions"]
+	path = submodules/dom-expressions
+	url = https://github.com/ryansolid/dom-expressions.git
+[submodule "vite-plugin-solid"]
+	path = submodules/vite-plugin-solid
+	url = https://github.com/fictitious/vite-plugin-solid
+[submodule "solid-refresh"]
+	path = submodules/solid-refresh
+	url = https://github.com/solidjs/solid-refresh

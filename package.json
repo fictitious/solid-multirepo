@@ -1,0 +1,34 @@
+{
+    "name": "solid-sources-monorepo",
+    "private": true,
+    "version": "0.1.0",
+    "desciption": "all solid.js and related source code as submodules in one monorepo",
+    "devDependencies": {
+        "yarn": "^1.22.15"
+    },
+    "resolutions": {
+        "vite": "2.7.0-beta.0",
+        "esbuild": "0.13.7",
+        "dom-expressions": "workspace:*",
+        "babel-plugin-jsx-dom-expressions": "workspace:*",
+        "solid-js": "workspace:*",
+        "babel-preset-solid": "workspace:*",
+        "solid-app-router": "workspace:*",
+        "vite-plugin-solid": "workspace:*",
+        "solid-refresh": "workspace:*"
+    },
+    "scripts": {
+        "bootstrap": "yarn install --mode=skip-build"
+    },
+    "packageManager": "yarn@3.0.2",
+    "workspaces": [
+        "submodules/dom-expressions",
+        "submodules/dom-expressions/packages/*",
+        "submodules/solid",
+        "submodules/solid/packages/*",
+        "submodules/solid-app-router",
+        "submodules/solid-refresh",
+        "submodules/solid-site",
+        "submodules/vite-plugin-solid"
+    ]
+}

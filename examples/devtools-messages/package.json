@@ -1,0 +1,20 @@
+{
+    "name": "solid-devtools-messages-exposed",
+    "version": "0.1.0",
+    "description": "shows solid devtools messages",
+    "scripts": {
+        "start": "vite",
+        "dev": "vite",
+        "build": "vite build",
+        "serve": "vite preview"
+    },
+    "license": "MIT",
+    "devDependencies": {
+        "vite": "^2.4.4",
+        "vite-plugin-solid": "^2.0.1",
+        "yarn": "^1.22.0"
+    },
+    "dependencies": {
+        "solid-js": "^1.0.7"
+    }
+}

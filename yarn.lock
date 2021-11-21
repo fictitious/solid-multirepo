@@ -9354,7 +9354,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"hyper-dom-expressions@0.30.7, hyper-dom-expressions@workspace:submodules/dom-expressions/packages/hyper-dom-expressions":
+"hyper-dom-expressions@workspace:*, hyper-dom-expressions@workspace:submodules/dom-expressions/packages/hyper-dom-expressions":
   version: 0.0.0-use.local
   resolution: "hyper-dom-expressions@workspace:submodules/dom-expressions/packages/hyper-dom-expressions"
   dependencies:
@@ -11761,7 +11761,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"lit-dom-expressions@0.30.7, lit-dom-expressions@workspace:submodules/dom-expressions/packages/lit-dom-expressions":
+"lit-dom-expressions@workspace:*, lit-dom-expressions@workspace:submodules/dom-expressions/packages/lit-dom-expressions":
   version: 0.0.0-use.local
   resolution: "lit-dom-expressions@workspace:submodules/dom-expressions/packages/lit-dom-expressions"
   dependencies:
@@ -19472,7 +19472,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"yarn@npm:^1.22.15":
+"yarn@npm:^1.22.0, yarn@npm:^1.22.15":
   version: 1.22.17
   resolution: "yarn@npm:1.22.17"
   bin:

@@ -5,7 +5,8 @@ import type {Component, Accessor} from 'solid-js';
 const [count, setCount] = createSignal(0);
 
 const interestingMessages = [
-    'solid-devtools-relay',
+    'solid-devtools-hook',
+    'solid-devtools-channel'
 ];
 
 const S: Component = () => {
@@ -21,7 +22,7 @@ const S: Component = () => {
         if (source !== window || !data) {
             return;
         }
-        if (interestingMessages.includes(data.source)) {
+        if (interestingMessages.includes(data.category)) {
             console.log(data);
             if (div) {
                 const e = document.createElement('div');
@@ -81,9 +82,12 @@ console.log(`T interval: count=${state.count}`);
         state.interval && clearInterval(state.interval);
     });
 
+    const buttonClick = () => { console.log('Q') };
+
     return <>
         <div>render count: {props.count}</div>
         <div>state count: {state.count}</div>
+        <div><button onclick={buttonClick}>Q</button></div>
     </>;
 }
 

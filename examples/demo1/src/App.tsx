@@ -51,6 +51,8 @@ const TestData: Component<{data: Data}> = (props) => {
   return (<div>{props?.data?.first} {props?.data?.last}</div>)
 };
 
+const ImmediateComp: Component = (props) => <div>immediate: {props.children}</div>;
+
 const App: Component = () => {
   const [first, setFirst] = createSignal("JSON");
   const [last, setLast] = createSignal("Bourne");
@@ -61,7 +63,7 @@ const App: Component = () => {
 
   createEffect(() => setData(d => ({...d, first: d.first + '+'})));
 
-  return (
+  return <ImmediateComp>
     <div class={styles.App}>
       <header class={styles.header}>
         <img src={logo} class={styles.logo} alt="logo" />
@@ -92,7 +94,7 @@ const App: Component = () => {
         </a>
       </header>
     </div>
-  );
+  </ImmediateComp>;
 };
 
 export {App};

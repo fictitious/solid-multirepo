@@ -1,5 +1,6 @@
 {
     "name": "solid-devtools-messages-exposed",
+    "private": true,
     "version": "0.1.0",
     "description": "shows solid devtools messages",
     "scripts": {
@@ -10,11 +11,11 @@
     },
     "license": "MIT",
     "devDependencies": {
-        "vite": "^2.4.4",
-        "vite-plugin-solid": "^2.0.1",
+        "vite": "^2.7.0-beta.1",
+        "vite-plugin-solid": "^2.1.2",
         "yarn": "^1.22.0"
     },
     "dependencies": {
-        "solid-js": "^1.0.7"
+        "solid-js": "^1.2.3"
     }
 }

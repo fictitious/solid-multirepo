@@ -15017,7 +15017,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"postcss@npm:^8.1.6, postcss@npm:^8.2.1, postcss@npm:^8.3.6, postcss@npm:^8.3.8":
+"postcss@npm:^8.1.6, postcss@npm:^8.2.1, postcss@npm:^8.3.6":
   version: 8.3.11
   resolution: "postcss@npm:8.3.11"
   dependencies:
@@ -15025,6 +15025,17 @@ __metadata:
     picocolors: ^1.0.0
     source-map-js: ^0.6.2
   checksum: 1a230553d74c66aa9585c90781ed8ea75f19cefea405d2117b67fbeb24b5b5e0e17be2e0c5a07db31dd085643a13394127ab2222e940771b70498331bf20f35e
+  languageName: node
+  linkType: hard
+
+"postcss@npm:^8.3.11":
+  version: 8.4.4
+  resolution: "postcss@npm:8.4.4"
+  dependencies:
+    nanoid: ^3.1.30
+    picocolors: ^1.0.0
+    source-map-js: ^1.0.1
+  checksum: 6cf3fe0ecdf5a0d2aeb5e8404938c7eab968704e2e29dc5421e90b4014eb1975c1c0ad828425f2428807ef6e3fcfadd71f988ab55cb06c28ac2866f22403255b
   languageName: node
   linkType: hard
 
@@ -16121,7 +16132,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"rollup@npm:^2.43.1, rollup@npm:^2.52.1, rollup@npm:^2.52.3, rollup@npm:^2.55.1, rollup@npm:^2.56.1, rollup@npm:^2.57.0, rollup@npm:^2.58.0":
+"rollup@npm:^2.43.1, rollup@npm:^2.52.1, rollup@npm:^2.52.3, rollup@npm:^2.55.1, rollup@npm:^2.56.1, rollup@npm:^2.58.0":
   version: 2.58.3
   resolution: "rollup@npm:2.58.3"
   dependencies:
@@ -16132,6 +16143,20 @@ __metadata:
   bin:
     rollup: dist/bin/rollup
   checksum: 20305ac3aea2a62be1728cfd3477419431bad2931532cc136da1904841fa03c318b231027b3a3da077baa0a874c20d72985bf74ed42dad103e88de610eb447a9
+  languageName: node
+  linkType: hard
+
+"rollup@npm:^2.58.3":
+  version: 2.60.1
+  resolution: "rollup@npm:2.60.1"
+  dependencies:
+    fsevents: ~2.3.2
+  dependenciesMeta:
+    fsevents:
+      optional: true
+  bin:
+    rollup: dist/bin/rollup
+  checksum: 77d7980bd5e619075c7cc67ccbe63263c4e98bd4cc41d4d77d5d4b743cb954adc81d348e38049546645651e2d0e73feeafdcac4474bd8ea333bf5cb882f0bc0c
   languageName: node
   linkType: hard
 
@@ -16667,9 +16692,20 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "solid-demo-1@workspace:examples/demo1"
   dependencies:
-    solid-js: ^1.0.7
-    vite: ^2.4.4
-    vite-plugin-solid: ^2.0.1
+    solid-js: ^1.2.3
+    vite: ^2.7.0-beta.1
+    vite-plugin-solid: ^2.1.2
+    yarn: ^1.22.0
+  languageName: unknown
+  linkType: soft
+
+"solid-devtools-demo-1@workspace:examples/devtools-demo1":
+  version: 0.0.0-use.local
+  resolution: "solid-devtools-demo-1@workspace:examples/devtools-demo1"
+  dependencies:
+    solid-js: ^1.2.3
+    vite: ^2.7.0-beta.1
+    vite-plugin-solid: ^2.1.2
     yarn: ^1.22.0
   languageName: unknown
   linkType: soft
@@ -16678,9 +16714,9 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "solid-devtools-messages-exposed@workspace:examples/devtools-messages"
   dependencies:
-    solid-js: ^1.0.7
-    vite: ^2.4.4
-    vite-plugin-solid: ^2.0.1
+    solid-js: ^1.2.3
+    vite: ^2.7.0-beta.1
+    vite-plugin-solid: ^2.1.2
     yarn: ^1.22.0
   languageName: unknown
   linkType: soft
@@ -16953,6 +16989,13 @@ __metadata:
   version: 0.6.2
   resolution: "source-map-js@npm:0.6.2"
   checksum: 9c8151a29e00fd8d3ba87709fdf9a9ce48313d653f4a29a39b4ae53d346ac79e005de624796ff42eff55cbaf26d2e87f4466001ca87831d400d818c5cf146a0e
+  languageName: node
+  linkType: hard
+
+"source-map-js@npm:^1.0.1":
+  version: 1.0.1
+  resolution: "source-map-js@npm:1.0.1"
+  checksum: 22606113d62bbd468712b0cb0c46e9a8629de7eb081049c62a04d977a211abafd7d61455617f8b78daba0b6c0c7e7c88f8c6b5aaeacffac0a6676ecf5caac5ce
   languageName: node
   linkType: hard
 
@@ -18749,15 +18792,15 @@ typescript@>=4.4.0:
   languageName: unknown
   linkType: soft
 
-"vite@npm:2.7.0-beta.0":
-  version: 2.7.0-beta.0
-  resolution: "vite@npm:2.7.0-beta.0"
+"vite@npm:2.7.0-beta.1":
+  version: 2.7.0-beta.1
+  resolution: "vite@npm:2.7.0-beta.1"
   dependencies:
-    esbuild: ^0.13.2
+    esbuild: ^0.13.10
     fsevents: ~2.3.2
-    postcss: ^8.3.8
+    postcss: ^8.3.11
     resolve: ^1.20.0
-    rollup: ^2.57.0
+    rollup: ^2.58.3
   peerDependencies:
     less: "*"
     sass: "*"
@@ -18774,7 +18817,7 @@ typescript@>=4.4.0:
       optional: true
   bin:
     vite: bin/vite.js
-  checksum: dcd05ee625adefe44d2bb62df7dc8b67204804181758458e4bc101e3d4f8f796876726841751de5dd16d49ffef840254fb0f93fcc8419ab98c1b9c14252e951b
+  checksum: 6470eb2bf8341d549b607a561af8b4b89fde651bda3a901cebb9e86fbbd9cd3154445c7d8cae7ef09a1e15435ad98dc2a97da01f682e0029205c3cbec85b9470
   languageName: node
   linkType: hard
 

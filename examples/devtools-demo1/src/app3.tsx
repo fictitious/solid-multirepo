@@ -35,8 +35,8 @@ const App3: Component = () => {
     return <div>
         App: 
         <div><button onclick={[toggleShow, 0]}>{showSignals[0].show() ? 'Hide' : 'Show'}</button> <Show when={showSignals[0].show()}><Comp3 text="0" /></Show></div>
-        <div><button onclick={[toggleShow, 1]}>{showSignals[0].show() ? 'Hide' : 'Show'}</button> <Show when={showSignals[1].show()}><Comp3 text="1" /></Show></div>
-        <div><button onclick={[toggleShow, 2]}>{showSignals[0].show() ? 'Hide' : 'Show'}</button> <Show when={showSignals[2].show()}><Comp3 text="2" /></Show></div>
+        <div><button onclick={[toggleShow, 1]}>{showSignals[1].show() ? 'Hide' : 'Show'}</button> <Show when={showSignals[1].show()}><Comp3 text="1" /></Show></div>
+        <div><button onclick={[toggleShow, 2]}>{showSignals[2].show() ? 'Hide' : 'Show'}</button> <Show when={showSignals[2].show()}><Comp3 text="2" /></Show></div>
     </div>
 };
 

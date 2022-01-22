@@ -11,7 +11,7 @@
         "yarn": "^1.22.15"
     },
     "resolutions": {
-        "vite": "2.7.0-beta.1",
+        "vite": "2.7.13",
         "esbuild": "0.13.7",
         "dom-expressions": "workspace:*",
         "babel-plugin-jsx-dom-expressions": "workspace:*",

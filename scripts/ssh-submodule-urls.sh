@@ -7,6 +7,6 @@ scriptDir="$(cd "${BASH_SOURCE%/*}/" >/dev/null 2>&1 && pwd)"
 
 for s in $(ls submodules) ; do
     if isForked "${s}" ; then
-        (cd "submodules/${s}" && git remote set-url origin "git:github.com/fictitious/${s}.git")
+        (cd "submodules/${s}" && git remote set-url origin "git@github.com:fictitious/${s}.git")
     fi
 done

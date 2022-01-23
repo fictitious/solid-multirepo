@@ -19,3 +19,6 @@
 [submodule "solid-refresh"]
 	path = submodules/solid-refresh
 	url = https://github.com/solidjs/solid-refresh.git
+[submodule "solid-devtools"]
+	path = submodules/solid-devtools
+	url = git@github.com:fictitious/solid-devtools-proto

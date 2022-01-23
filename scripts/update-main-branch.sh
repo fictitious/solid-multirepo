@@ -18,8 +18,10 @@ for s in $(ls submodules) ; do
         # forked - should be on separate branch, no need to --update-head-ok
         (cd "submodules/${s}" && echo "${s}" && git fetch origin ${b}:${b})
     else
-        # not forked - should have no changes
-        (cd "submodules/${s}" && git diff-index --quiet HEAD -- || { echo "there are uncommitted changes in ${s}. exiting." >&2; exit 1; }) || exit 1
-        (cd "submodules/${s}" && echo "${s}" && git fetch --update-head-ok origin ${b}:${b} && git reset --hard HEAD)
+        if [ "${s}" != "solid-devtools" ] ; then
+            # not forked - should have no changes
+            (cd "submodules/${s}" && git diff-index --quiet HEAD -- || { echo "there are uncommitted changes in ${s}. exiting." >&2; exit 1; }) || exit 1
+            (cd "submodules/${s}" && echo "${s}" && git fetch --update-head-ok origin ${b}:${b} && git reset --hard HEAD)
+        fi
     fi
 done

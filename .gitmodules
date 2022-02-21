@@ -21,7 +21,7 @@
 	url = https://github.com/solidjs/solid-refresh.git
 [submodule "solid-devtools"]
 	path = submodules/solid-devtools
-	url = git@github.com:fictitious/solid-devtools-proto
+	url = git@github.com:fictitious/solid-devtools.git
 [submodule "solid-tree-view"]
 	path = examples/solid-tree-view
 	url = https://github.com/fictitious/solid-tree-view.git

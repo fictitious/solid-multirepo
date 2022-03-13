@@ -19,9 +19,6 @@
 [submodule "solid-refresh"]
 	path = submodules/solid-refresh
 	url = https://github.com/solidjs/solid-refresh.git
-[submodule "solid-devtools"]
-	path = submodules/solid-devtools
-	url = https://github.com/fictitious/solid-devtools.git
 [submodule "solid-tree-view"]
 	path = examples/solid-tree-view
 	url = https://github.com/fictitious/solid-tree-view.git

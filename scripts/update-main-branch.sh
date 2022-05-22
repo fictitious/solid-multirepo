@@ -8,7 +8,7 @@ scriptDir="$(cd "${BASH_SOURCE%/*}/" >/dev/null 2>&1 && pwd)"
 
 for s in $(ls submodules) ; do
     case ${s} in
-    solid-site|vite-plugin-solid)
+    vite-plugin-solid)
         b=master
         ;;
     *)
